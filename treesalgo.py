@@ -1,17 +1,15 @@
-def solution(A, count=0):
-    A.sort()
-    if len(set(A)) != 1:
+def solution(A):
+    count = 0
+    while len(set(A) != 1:
+        A.sort()
         if A[-1] - 2 >= A[0]:
             A[-1] -= 1
             A[0] += 1
             count += 1
-            return solution(A, count)
         else:
             A[0] += 1
             count += 1
-            return solution(A, count)
-    else:
-        return count
+    return count
 
 
 print(solution([1, 2, 2, 4]))
