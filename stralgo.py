@@ -1,6 +1,6 @@
 #This is the updated version on feb 7 2021
-def sol(S, count=0):
-count = 0
+def sol(S):
+    count = 0
     B = "BALLOON"
     while len(S) >= len(B):
         for a in S:
@@ -13,6 +13,6 @@ count = 0
 
     return count
     
-sol("BAONXXOLL", "BALLOON")         
-sol("BAOOLAONLNNOLOLLBLOGBAX", "BALLOON")
-sol("ONLABLABOON", "BALLOON")     
+sol("BAONXXOLL")         
+sol("BAOOLAONLNNOLOLLBLOGBAX")
+sol("ONLABLABOON")     
